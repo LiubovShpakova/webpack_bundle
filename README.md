@@ -198,9 +198,10 @@ new OptimizeCssAssetsPlugin(),
 
 Webpack собрался...
 как обычно, конфликт версий плагинов(((
-В файле webpack.config.js поправить путь к файлам - добавить расширение или просто замените функцию
+1. В файле webpack.config.js поправить путь к файлам - добавить расширение или просто замените функцию
 const loadModeConfig = (env) =>
-require(`./build-utils/${env.mode}.config.js`)(env); 2. вот эти четыре плагина снесите
+require(`./build-utils/${env.mode}.config.js`)(env); 
+2. вот эти четыре плагина снесите
 npm uninstall webpack webpack-cli webpack-dev-server webpack-merge
 и поставьте заново с указанными версиями
 "webpack": "^4.44.1",
@@ -211,3 +212,6 @@ npm install webpack@4.44.1 webpack-cli@3.3.12 webpack-dev-server@3.11.0 webpack-
 или вручную исправить номера версий в package.json и запутстить команду npm i 3. ссылка на гит с рабочей сборкой с урока
 https://github.com/paris-school/webpack_bundle 4. Ссылка на гугл-док
 https://docs.google.com/document/d/1ktqCQ4Pqua09vR_HMbwDb4lbcP_c0pCa1lt4pUB_7ms/edit#
+
+node - переход в консоль в терминале
+ctrl C два раза - выход из консоли терминала
